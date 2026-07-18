@@ -1,0 +1,17 @@
+import { AlertTriangle, BrainCircuit, FileCheck2, LockKeyhole, Scale, UserCheck } from "lucide-react";
+import { Notice, PageIntro } from "@/components/ui";
+
+export default function MethodologyPage() {
+  return <main className="shell">
+    <PageIntro eyebrow="Responsible AI" title="Decision support, with boundaries." description="ScopeGuard is designed to organize evidence and reveal uncertainty. It does not replace project leadership, contractual review, or accountable human judgment."/>
+    <div className="method-grid">
+      <nav className="method-nav"><a href="#method">How it works</a><a href="#safeguards">Safeguards</a><a href="#limitations">Limitations</a><a href="#data">Data & security</a></nav>
+      <div className="method-content">
+        <section id="method"><h2>How the analysis works</h2><p>ScopeGuard compares the original agreed baseline with every provided source. The model extracts structured requirements, proposed changes, conflicts, questions, dependencies, risks, tasks, and acceptance criteria. Important conclusions carry source IDs so reviewers can return to the underlying evidence.</p><div className="principles"><article className="card principle"><BrainCircuit size={20}/><h3>Structured reasoning</h3><p>The model responds to a strict schema instead of generating an unbounded narrative.</p></article><article className="card principle"><FileCheck2 size={20}/><h3>Evidence first</h3><p>Requirements, contradictions, and scope warnings must cite the supplied sources.</p></article></div></section>
+        <section id="safeguards"><h2>Built-in safeguards</h2><div className="principles"><article className="card principle"><UserCheck size={20}/><h3>Human approval gate</h3><p>Reviewers approve or reject requirements and resolve questions before confirmation.</p></article><article className="card principle"><Scale size={20}/><h3>No authority claims</h3><p>The analysis is not legal advice and does not determine contractual entitlement.</p></article><article className="card principle"><LockKeyhole size={20}/><h3>No external actions</h3><p>ScopeGuard never contacts clients, assigns work, or changes external systems.</p></article><article className="card principle"><AlertTriangle size={20}/><h3>Visible uncertainty</h3><p>Confidence labels, draft markers, open questions, and limitations remain visible.</p></article></div></section>
+        <section id="limitations"><h2>Known limitations</h2><ul><li>Missing, inaccurate, or outdated material can produce incomplete findings.</li><li>Source citations establish traceability, not truth or legal authority.</li><li>Nuance, sarcasm, informal approvals, and organization-specific language may be misread.</li><li>Confidence is a model assessment, not a statistical guarantee.</li><li>The suggested task plan and owner roles require feasibility review by the delivery team.</li></ul><Notice>Always compare material conclusions against the original documents and involve the appropriate project, commercial, or legal owner when the stakes require it.</Notice></section>
+        <section id="data"><h2>Data and security model</h2><p>The browser sends project material only to ScopeGuard’s server route. The OpenAI API key stays server-side and the model is selected through <code>OPENAI_MODEL</code>. This prototype stores the active workspace locally in the browser for convenience; teams should define retention, access, and data-classification policies before production use.</p></section>
+      </div>
+    </div>
+  </main>;
+}
