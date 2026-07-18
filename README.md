@@ -60,7 +60,7 @@ See [ARCHITECTURE.md](ARCHITECTURE.md) for the component boundary and trust mode
 
 ## GPT-5.6 usage
 
-The model identifier is read exclusively from `OPENAI_MODEL`. Set it to `gpt-5.6` when that model is enabled for your account. The route uses the Responses API with strict JSON Schema output and performs a second Zod validation before returning analysis to the client.
+The model identifier is read exclusively from `OPENAI_MODEL`. The deployed hackathon build uses `gpt-5-mini` for lower-latency structured analysis. The route uses the Responses API with strict JSON Schema output and performs a second Zod validation before returning analysis to the client.
 
 The system instruction tells the model to:
 
@@ -104,7 +104,7 @@ Open [http://localhost:3000](http://localhost:3000). The included demo does not 
 | Variable | Required | Purpose |
 | --- | --- | --- |
 | `OPENAI_API_KEY` | For live analysis | Server-side OpenAI credential |
-| `OPENAI_MODEL` | For live analysis | Model identifier, e.g. `gpt-5.6` |
+| `OPENAI_MODEL` | For live analysis | Model identifier, e.g. `gpt-5-mini` |
 | `NEXT_PUBLIC_SITE_URL` | Recommended in production | Absolute site URL for social metadata |
 
 Never prefix the API key with `NEXT_PUBLIC_`.
