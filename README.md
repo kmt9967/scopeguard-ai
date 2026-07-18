@@ -4,7 +4,7 @@
 
 **Category:** Work & Productivity  
 **Built with:** Codex using GPT-5.6  
-**Live demo:** Pending production deployment  
+**Live demo:** [scopeguard-ai-rust.vercel.app](https://scopeguard-ai-rust.vercel.app)  
 **Demo video:** Pending recording
 
 ScopeGuard AI is a polished Work & Productivity hackathon project for agencies, production teams, developers, and operations managers. It turns briefs, meeting notes, email text, chats, tasks, and change requests into a traceable scope workspace—without making commitments on the user's behalf.

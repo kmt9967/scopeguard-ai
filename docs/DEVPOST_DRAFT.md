@@ -5,8 +5,8 @@
 - **Title:** ScopeGuard AI
 - **Tagline:** Turn scattered client instructions into an approved, evidence-backed delivery plan.
 - **Category:** Work & Productivity
-- **Live demo:** PENDING
-- **Repository:** PENDING
+- **Live demo:** https://scopeguard-ai-rust.vercel.app
+- **Repository:** https://github.com/kmt9967/scopeguard-ai
 - **Demo video:** PENDING
 - **Codex Session ID:** PENDING — run `/feedback` in the primary build task
 
