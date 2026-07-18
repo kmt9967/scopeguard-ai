@@ -8,7 +8,7 @@
 - **Live demo:** https://scopeguard-ai-rust.vercel.app
 - **Repository:** https://github.com/kmt9967/scopeguard-ai
 - **Demo video:** PENDING
-- **Codex Session ID:** PENDING — run `/feedback` in the primary build task
+- **Codex Session ID:** 019f7333-21af-7070-ad8e-6a6dcfcb0729
 
 ## Inspiration
 
